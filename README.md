@@ -1,9 +1,12 @@
-### `yarn add`
+### Demo
+https://redsocial-test-nilton.netlify.app/
+
+### `yarn add` o `npm install`
 Usar yarn add para obtener las dependencias necesarias para correr la aplicación
-### `yarn start`
+### `yarn start` o `npm start`
 
 Corre la app en http://localhost:3000
-### `yarn build`
+### `yarn build` o `npm run build`
 
 Genera el Build de Producción para poder hacer deployment
 
