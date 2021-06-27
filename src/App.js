@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Container, Navbar } from "react-bootstrap";
+import { ListPost } from "./components/Posts/ListPost";
+import PostState from "./context/posts/PostState";
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <>
+      <PostState>
+        <Navbar expand="lg" variant="dark" bg="dark">
+          <Container>
+            <Navbar.Brand href="#">Red Social</Navbar.Brand>
+          </Container>
+        </Navbar>
 
-export default App;
+        <ListPost />
+      </PostState>
+    </>
+  );
+};
